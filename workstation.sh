@@ -10,5 +10,3 @@ iptables -A OUTPUT -o eth0 -m owner --uid-owner 999 -j MARK --set-mark 1
 # iptables -t mangle -A POSTROUTING -o eth0 -m mark --mark 1 -j DSCP --set-dscp 1
 iptables -t mangle -A POSTROUTING -o eth0 -m mark --mark 1 -j TOS --set-tos 3
 
-
-

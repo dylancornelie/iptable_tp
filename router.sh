@@ -20,3 +20,6 @@ iptables -t nat -F
 
 #change source ip of workstation to 192.168.1.2 when a packet hit the router
 iptables -t nat -A POSTROUTING -s 192.168.2.0/24 -j SNAT --to-source 192.168.1.2
+
+# Droping all packet to be forwarded with a tos value equal to 3 (not a standard value can not conflict with standard value)
+iptables -t filter -A FORWARD -m tos --tos 0x3 -j DROP
