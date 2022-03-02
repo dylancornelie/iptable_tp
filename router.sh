@@ -1,7 +1,7 @@
 # Allowing IP Forward
 sysctl -w net.ipv4.ip_forward=1
 # or
-# cat 1 > /proc/sys/net/ipv4/ip_forward
+# echo 1 > /proc/sys/net/ipv4/ip_forward
 
 #Set the default policy for INPUT, FORWARD & OUTPUT chains to DROP instead of ACCEPT
 # iptables -t filter --policy INPUT DROP
