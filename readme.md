@@ -12,7 +12,7 @@ First you need to run the llista_blanca.sh and llista_negra.sh.
 
 And to finish the configuration of iptables run all the command in router.sh.
 
-You can add deic_redirish.sh any time after having execute all the commands from the first three script above.
+You can add deic_redirish.sh and traceroute.sh any time after having executed all the previous commands.
 
 ## Workstation
 
