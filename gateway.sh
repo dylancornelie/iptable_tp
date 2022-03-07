@@ -9,5 +9,5 @@ iptables -A INPUT -p tcp --dport 443 -d 192.168.2.1 -j http_chain
 iptables -A INPUT -p tcp --dport 22 -d 192.168.2.1 -m state --state NEW,ESTABLISHED -j ssh_chain
 iptables -A OUTPUT -p tcp --sport 22 -s 192.168.2.1 -m state --state ESTABLISHED -j ssh_chain
 
-#change source ip of workstation to 192.168.1.2 when a packet hit the router
+#change source ip of workstation to 192.168.1.2 when a packet hit the gateway
 !iptables -t nat -A POSTROUTING -s 192.168.2.0/24 -j SNAT --to-source 192.168.1.2
