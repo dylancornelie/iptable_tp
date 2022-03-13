@@ -7,3 +7,5 @@ iptables -A ssh_chain -d 192.168.2.33 -j ACCEPT
 
 # Deny all request that do not match
 iptables -A ssh_chain -j DROP
+
+

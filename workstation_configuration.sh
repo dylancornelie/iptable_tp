@@ -10,7 +10,7 @@ service rsyslog start
 apt-get install openssh-server -y
 
 # Active ssh service
-service ssh start
+service ssh star
 
 # Configure the log location
 # add the following after #RULES : kern.warning          /var/log/iptables.log
